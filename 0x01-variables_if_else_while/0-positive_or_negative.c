@@ -3,10 +3,8 @@
 #include <stdio.h>
 
 /*
- * main : determines if a number is zero, positive or negative
- * Return always zero 
-  */
-
+ * main - A PROGRAM THAT TELLS IF A THE NUMBER N IS ZERO, POSITIVE OR NEGATIVE.
+ */
 int main(void)
 {
 	int n;
@@ -21,10 +19,9 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
-	else 
+	else
 	{
 		printf("%d is negative\n", n);
 	}
-	/* your code goes there */
 	return (0);
 }
