@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * the function _puts_recursion that prints a string
+ * _puts_recursion - function like puts()
  * @t: input
  * Return: Always 0
  */
 void _puts_recursion(char *t)
 {
-	if (*t != '\0')
+	if (*t)
 	{
 		_putchar(*t);
 		_puts_recursion(t + 1);
