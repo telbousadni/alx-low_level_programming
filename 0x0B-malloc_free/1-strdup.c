@@ -4,9 +4,8 @@
 /**
  * _strdup - return a pointer to a new string which is a duplicate string
  * @str: char
- * Return a pointer to the duplicated string,and NULL if insufficient memory
+ * Return: a pointer to the duplicated string,and NULL if insufficient memory
  */
-
 char *_strdup(char *str)
 {
 	int i = 0, r = 0;
