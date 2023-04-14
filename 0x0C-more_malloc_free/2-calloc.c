@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "main.h"
-
 /**
  * *_memstore - stores a constant byte in memory
  * @s: memory stored in
@@ -20,7 +19,6 @@ char *_memstore(char *s, char b, unsigned int n)
 
 	return (s);
 }
-
 /**
  * *_calloc - allocates memory for an array
  * @nmemb: number of elements in the array
