@@ -6,6 +6,8 @@
  * @name: type char*
  * @age: type int
  * @owner: type char*
+ *
+ *
  */
 
 struct dog
