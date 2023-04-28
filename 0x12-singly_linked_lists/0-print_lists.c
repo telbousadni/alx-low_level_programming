@@ -9,26 +9,19 @@
  *
  * Return: the number of nodes
  */
-
 size_t print_list(const list_t *h)
 {
-	size_t c = 0;
+	size_t s = 0;
 
-	while (h != NULL)
+	while (h)
 	{
-		char *str = h->str ? h->str : "(nil)";
-		size_t len = 0;
-
-		while (str[len] != '\0')
-			len++;
-		for (size_t i = 0; i < len; i++)
-			_putchar(str[i]);
-
-		_putchar('\n');
-		c++;
-
-
+		if (!h->str)
+			printf("[0] (nil)\n");
+		else
+			printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
+		s++;
 	}
-	return (c);
+
+	return (s);
 }
