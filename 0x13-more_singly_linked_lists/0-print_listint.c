@@ -11,7 +11,7 @@ size_t print_listint(const listint_t *h)
 {
 	size_t n_nod++ = 0;
 
-	while (h->next != NULL)
+	while (h != NULL)
 	{
 		printf("%d", h->n);
 		n_nod++;
