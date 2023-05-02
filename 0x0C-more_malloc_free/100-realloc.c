@@ -42,5 +42,4 @@ void *_realloc(void *ptr, int old_size, int new_size)
 		}
 
 	free(ptr);
-	return (new_ptr);
 }
