@@ -2,27 +2,32 @@
 #include <stdio.h>
 
 /**
- * print_binary - converts decimal to binary without / or %
- * @n: decimal number to print
+ * print_binary - from n to bytes
+ *
+ * @n: number to be formatted into bytes
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int temp;
-	int nshift;
+	int zeros, i, num_bits;
 
 	if (n == 0)
 	{
-		printf("0");
+		_putchar('0');
 		return;
 	}
 
-	for (temp = n, nshift = 0; (temp >>= 1) > 0; nshift++)
-		;
-	for (; nshift >= 0; nshift--)
+	zeros = 1;
+	num_bits = sizeof(unsigned long int) * 8;
+	for (i = num_bits - 1; i >= 0; i--)
 	{
-		if ((n >> nshifts) & 1)
-			printf("1");
-		else
-			printf("0");
+		if ((n >> i) & 1)
+		{
+			zeros = 0;
+			_putchar('1');
+		}
+		else if (!zeros)
+		{
+			_putchar('0');
+		}
 	}
 }
