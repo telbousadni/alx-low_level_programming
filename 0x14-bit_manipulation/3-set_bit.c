@@ -5,7 +5,7 @@
  *
  * @n: A pointer to an unsigned long integer.
  * @index: The index position to change, starting from 0.
- * Return: 1 || -1 
+ * Return: 1 || -1
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
